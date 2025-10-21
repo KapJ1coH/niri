@@ -384,6 +384,8 @@ binds {
     Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
+    Mod+Alt+Left        { move-workspace-to-monitor-previous; }
+    Mod+Alt+Right        { move-workspace-to-monitor-next; }
     
     // === Mouse Wheel Navigation ===
     Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
@@ -439,6 +441,8 @@ binds {
     // === Manual Sizing ===
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
+    Alt+A { set-column-width "-5%"; }
+    Alt+S { set-column-width "+5%"; }
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
     
