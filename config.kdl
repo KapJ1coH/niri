@@ -67,9 +67,27 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
+
 output "eDP-1" {
     scale 2
     // off
+}
+
+output "DP-11" {
+    // scale 2
+    // off
+    mode "3440x1440@120.000"
+    // variable-refresh-rate
+}
+
+gestures {
+    hot-corners {
+        off
+        // top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
 }
 
 
@@ -333,6 +351,13 @@ window-rule {
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"zen$"# title="^Picture-in-Picture$"
     open-floating true
 }
 
