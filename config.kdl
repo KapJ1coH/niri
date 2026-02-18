@@ -435,6 +435,8 @@ binds {
     Mod+E hotkey-overlay-title="Open a Email: thunderbird" { spawn "thunderbird"; }
     Mod+Z hotkey-overlay-title="Open a Browser: Zen" { spawn-sh "flatpak run app.zen_browser.zen"; }
 
+    Mod+A hotkey-overlay-title="Open the weekly calendar pane" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:weekly-calendar" "togglePanel"; }
+
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
