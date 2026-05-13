@@ -421,8 +421,8 @@ binds {
     XF86MonBrightnessDown { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
 
     // Utility shortcuts
-    // Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
-    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "toggle"; }
+    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
+    Mod+Ctrl+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "toggle"; }
     Mod+L { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
 
     // Mod-Shift-/, which is usually the same as Mod-?,
@@ -690,3 +690,6 @@ debug {
   // Allows notification actions and window activation from Noctalia.
   honor-xdg-activation-with-invalid-serial
 }
+
+include "./noctalia.kdl"
+
