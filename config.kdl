@@ -406,6 +406,12 @@ binds {
     // Most actions that you can bind here can also be invoked programmatically with
     // `niri msg action do-something`.
 
+
+    // For handy transcription
+    Mod+H  hotkey-overlay-title="Toggle Handy transcription"{ spawn "pkill" "-USR2" "-x" "handy"; }
+    Mod+Shift+H hotkey-overlay-title="Launch Handy in bg" { spawn "handy" "--start-hidden";}
+    Mod+Ctrl+Shift+H hotkey-overlay-title="Launch Handy" { spawn "handy";}
+
     // Core Noctalia binds
     Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+S { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
@@ -685,6 +691,8 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+
 }
 debug {
   // Allows notification actions and window activation from Noctalia.
