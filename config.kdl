@@ -73,10 +73,11 @@ output "eDP-1" {
     // off
 }
 
-output "DP-11" {
+output "Acer Technologies Z35P T3ZAA0038511" {
     // scale 2
     // off
     mode "3440x1440@120.000"
+    // transform "180"
     // variable-refresh-rate
 }
 
